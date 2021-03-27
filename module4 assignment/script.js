@@ -1,4 +1,4 @@
-(function (window) {
+(function () {
   var names = [
     "Yaakov",
     "John",
@@ -15,10 +15,10 @@
   for (var i = 0; i < names.length; i++) {
     var firstLetter = names[i].charAt(0).toLowerCase();
 
-    if (firstLetter == "j") {
-      window.byeSpeaker(names[i]);
+    if (firstLetter === "j") {
+      byeSpeaker(names[i]);
     } else {
-      window.helloSpeaker(names[i]);
+      helloSpeaker(names[i]);
     }
   }
-})(window);
+})();
